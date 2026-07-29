@@ -93,6 +93,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Oktoberfest Hockenheim 2026 · 2ª Edição" },
+      { name: "twitter:description", content: "Oktoberfest Hockenheim 2026: open food, open bar de chope artesanal e música ao vivo em 31 de outubro." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8ecc1d99-7e88-4b15-818a-92b8a6824311/id-preview-89c4f402--70ff68cf-4018-4607-9a9f-f0fedbc9ae1e.lovable.app-1785359423405.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8ecc1d99-7e88-4b15-818a-92b8a6824311/id-preview-89c4f402--70ff68cf-4018-4607-9a9f-f0fedbc9ae1e.lovable.app-1785359423405.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -105,7 +109,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),
   shellComponent: RootShell,
