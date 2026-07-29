@@ -48,7 +48,9 @@ export function Header() {
           ))}
         </nav>
 
-        <TicketButton size="sm" className="hidden sm:inline-flex" />
+        <span className="hidden sm:block">
+          <TicketButton size="sm" />
+        </span>
         <a
           href="#ingressos"
           target="_blank"
