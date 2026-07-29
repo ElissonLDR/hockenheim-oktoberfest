@@ -192,16 +192,19 @@
 
 @utility container-okt {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   margin-inline: auto;
   padding-inline: 24px;
   @media (min-width: 768px) {
     padding-inline: 40px;
   }
+  @media (min-width: 1480px) {
+    padding-inline: 0;
+  }
 }
 
 @utility section-gap {
-  padding-block: clamp(80px, 10vw, 150px);
+  padding-block: clamp(56px, 7vw, 105px);
 }
 
 @utility h1-okt {
@@ -301,6 +304,33 @@
   opacity: 1;
   transform: none;
   filter: blur(0);
+}
+
+@keyframes okt-beer-wobble {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-12deg); }
+  75% { transform: rotate(12deg); }
+}
+
+.group:hover .okt-beer-icon {
+  animation: okt-beer-wobble 0.6s ease-in-out infinite;
+}
+
+.okt-video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(8px);
+}
+
+.okt-video-modal video {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 16px;
 }
 
 @media (prefers-reduced-motion: reduce) {

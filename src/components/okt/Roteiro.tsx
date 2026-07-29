@@ -21,7 +21,7 @@ const BLOCKS = [
     kicker: "Direto dos tanques",
     h3: "Chope tirado na origem",
     text: "Pilzen puro malte e Weissbier de trigo, produzidos e servidos no mesmo lugar. Mais o drink exclusivo da Oktoberfest, refrigerante e água mineral — tudo liberado, o dia inteiro.",
-    img: "chope.jpg",
+    img: "chope-tap.jpg",
     alt: "Chope artesanal Hockenheim sendo tirado direto dos tanques da fábrica",
   },
   {
@@ -66,10 +66,10 @@ export function Roteiro() {
                     }`}
                   >
                     <img
-                      src={`/images/${b.img}`}
+                      src={`/images/${b.img}?v=7`}
                       alt={b.alt}
                       loading="lazy"
-                      className="aspect-[4/3] w-full object-cover"
+                      className="aspect-[4/3] h-full w-full object-cover"
                     />
                   </div>
 
@@ -78,7 +78,7 @@ export function Roteiro() {
                     <p className="mt-4 text-[13px] font-semibold uppercase tracking-[0.14em] text-navy-50">
                       {b.kicker}
                     </p>
-                    <h3 className="h3-okt mt-2 text-navy">{b.h3}</h3>
+                    <h3 className="mt-2 font-display text-[32px] leading-[1.05] tracking-[-0.01em] text-navy md:text-[40px]">{b.h3}</h3>
                     <p className="body-okt mt-4 text-navy-60">{b.text}</p>
 
                     {b.lists && (
@@ -101,7 +101,7 @@ export function Roteiro() {
               </Reveal>
 
               {i < BLOCKS.length - 1 && (
-                <div className="py-[96px]">
+                <div className="py-[48px]">
                   <div className="relative h-px w-full bg-navy-10" aria-hidden="true">
                     <span className="absolute left-1/2 top-1/2 size-[10px] -translate-x-1/2 -translate-y-1/2 rotate-45 bg-blue" />
                   </div>
@@ -111,7 +111,7 @@ export function Roteiro() {
           ))}
         </div>
       </div>
-      <div className="mt-[96px]">
+      <div className="mt-[48px]">
         <SectionDivider />
       </div>
     </section>

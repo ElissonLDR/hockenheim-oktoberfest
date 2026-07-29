@@ -28,7 +28,7 @@ export function Header() {
       <div className="container-okt flex h-full items-center justify-between gap-6">
         <a href="#top" className="flex items-center" aria-label="Oktoberfest Hockenheim 2026">
           <img
-            src="/images/logo-oktoberfest.png"
+            src="/images/logo-oktoberfest.png?v=3"
             alt="Logo Oktoberfest Hockenheim"
             className="h-10 w-auto"
           />

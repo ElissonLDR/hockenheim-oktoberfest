@@ -51,7 +51,7 @@ function Item({ q, a, open, onToggle }: { q: string; a: string; open: boolean; o
         style={{ maxHeight: open ? `${panelRef.current?.scrollHeight ?? 400}px` : 0 }}
         className="overflow-hidden transition-[max-height] duration-500 ease-out"
       >
-        <p className="body-okt pb-7 pr-10 text-navy-60">{a}</p>
+        <p className="pb-7 pr-10 text-[16px] leading-[1.7] text-navy-60">{a}</p>
       </div>
     </div>
   );
@@ -63,25 +63,33 @@ export function Faq() {
   return (
     <section id="duvidas" className="section-gap">
       <div className="container-okt">
-        <Reveal>
-          <Diamonds />
-          <p className="eyebrow-okt mt-3 text-blue">Antes de você perguntar</p>
-          <h2 className="h2-okt mt-4 text-navy">Dúvidas frequentes</h2>
-        </Reveal>
-
-        <Reveal delay={80}>
-          <div className="mt-12 max-w-[820px] border-t border-navy-10">
-            {ITEMS.map((item, i) => (
-              <Item
-                key={item.q}
-                q={item.q}
-                a={item.a}
-                open={openIndex === i}
-                onToggle={() => setOpenIndex(openIndex === i ? -1 : i)}
-              />
-            ))}
+        <div className="grid gap-12 md:grid-cols-12 md:gap-16">
+          <div className="md:col-span-4">
+            <Reveal>
+              <div className="md:sticky md:top-[120px]">
+                <Diamonds />
+                <p className="eyebrow-okt mt-3 text-blue">Antes de você perguntar</p>
+                <h2 className="h2-okt mt-4 text-navy">Dúvidas frequentes</h2>
+              </div>
+            </Reveal>
           </div>
-        </Reveal>
+
+          <div className="md:col-span-8">
+            <Reveal delay={80}>
+              <div className="border-t border-navy-10">
+                {ITEMS.map((item, i) => (
+                  <Item
+                    key={item.q}
+                    q={item.q}
+                    a={item.a}
+                    open={openIndex === i}
+                    onToggle={() => setOpenIndex(openIndex === i ? -1 : i)}
+                  />
+                ))}
+              </div>
+            </Reveal>
+          </div>
+        </div>
       </div>
     </section>
   );

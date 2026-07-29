@@ -8,17 +8,17 @@ const LINKS = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-navy-10">
+    <footer className="bg-navy">
       <div className="container-okt py-14 pb-32 md:pb-14">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div>
             <img
-              src="/images/logo-oktoberfest.png"
+              src="/images/logo-oktoberfest.png?v=3"
               alt="Logo Oktoberfest Hockenheim"
               loading="lazy"
-              className="h-12 w-auto"
+              className="h-12 w-auto brightness-0 invert"
             />
-            <p className="mt-5 text-[14px] text-navy">31 de outubro · 2026 · Cervejaria Hockenheim</p>
+            <p className="mt-5 text-[14px] text-cream">31 de outubro · 2026 · Cervejaria Hockenheim</p>
             <a
               href="https://instagram.com/hockenheim_br"
               target="_blank"
@@ -31,14 +31,18 @@ export function Footer() {
 
           <nav className="flex flex-wrap gap-x-8 gap-y-3" aria-label="Rodapé">
             {LINKS.map((l) => (
-              <a key={l.href} href={l.href} className="text-[14px] text-navy-60 transition-colors hover:text-blue">
+              <a
+                key={l.href}
+                href={l.href}
+                className="text-[14px] text-cream-70 transition-colors hover:text-blue"
+              >
                 {l.label}
               </a>
             ))}
           </nav>
         </div>
 
-        <p className="mt-12 text-[14px] text-navy-50">
+        <p className="mt-12 text-[14px] text-cream-70/60">
           © 2026 Cervejaria Hockenheim · Todos os direitos reservados.
         </p>
       </div>

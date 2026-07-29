@@ -78,25 +78,29 @@ export function TicketButton({
   size?: "sm" | "md" | "lg";
   className?: string;
 }) {
-  const heights = { sm: "h-11 px-6 text-[14px]", md: "h-14 px-8 text-[16px]", lg: "h-16 px-10 text-[16px]" };
+  const heights = {
+    sm: "h-11 px-5 text-[13px] md:px-6 md:text-[14px]",
+    md: "h-12 px-5 text-[13px] md:h-14 md:px-8 md:text-[16px]",
+    lg: "h-12 px-5 text-[13px] md:h-16 md:px-10 md:text-[16px]",
+  };
   return (
     <a
       href={TICKET_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className={`group inline-flex items-center justify-center gap-2 rounded-full bg-blue font-bold tracking-[0.02em] text-cream transition-all duration-300 hover:-translate-y-0.5 hover:brightness-92 hover:shadow-soft active:translate-y-0 active:shadow-none ${heights[size]} ${className}`}
+      className={`group inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full bg-blue font-bold tracking-[0.02em] text-cream transition-all duration-300 hover:-translate-y-0.5 hover:brightness-92 hover:shadow-soft active:translate-y-0 active:shadow-none ${heights[size]} ${className}`}
     >
       Garantir meu ingresso
-      <ArrowRight />
+      <BeerIcon />
     </a>
   );
 }
 
-export function ArrowRight() {
+export function BeerIcon({ className = "" }: { className?: string }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="20"
+      height="20"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -104,10 +108,13 @@ export function ArrowRight() {
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
-      className="transition-transform duration-300 group-hover:translate-x-1"
+      className={`okt-beer-icon transition-transform duration-300 ${className}`}
     >
-      <path d="M5 12h14" />
-      <path d="m12 5 7 7-7 7" />
+      <path d="M17 11h1a3 3 0 0 1 0 6h-1" />
+      <path d="M9 12v6" />
+      <path d="M13 12v6" />
+      <path d="M14 7.5c-1 0-1.44.5-3 .5s-2-.5-3-.5-1.72.5-2.5.5a2.5 2.5 0 0 1 0-5c.78 0 1 .5 2.5.5S10 2 11 2s1.44.5 3 .5 2-.5 3-.5a2.5 2.5 0 0 1 0 5c-.78 0-1.5-.5-2.5-.5H14Z" />
+      <path d="M5 8v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8" />
     </svg>
   );
 }
