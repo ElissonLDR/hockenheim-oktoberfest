@@ -32,7 +32,7 @@ export function OperaQueen() {
                   src="/images/logo-opera-queen.png"
                   alt="Logo da banda Ópera Queen Tributo"
                   loading="lazy"
-                  className="absolute bottom-5 left-5 h-14 w-auto"
+                  className="absolute bottom-5 left-5 h-14 w-auto brightness-0 invert"
                 />
               </div>
             </div>
