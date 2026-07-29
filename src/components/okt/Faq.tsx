@@ -61,7 +61,7 @@ export function Faq() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section id="duvidas" className="section-gap pt-0">
+    <section id="duvidas" className="section-gap">
       <div className="container-okt">
         <Reveal>
           <Diamonds />

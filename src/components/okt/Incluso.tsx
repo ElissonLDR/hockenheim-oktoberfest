@@ -106,7 +106,7 @@ function cellClasses(i: number) {
 
 export function Incluso() {
   return (
-    <section id="incluso" className="section-gap pt-0">
+    <section id="incluso" className="section-gap">
       <div className="container-okt">
         <Reveal>
           <div className="rounded-[28px] bg-navy p-10 md:px-16 md:py-[72px]">

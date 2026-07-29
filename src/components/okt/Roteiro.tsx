@@ -44,7 +44,7 @@ const BLOCKS = [
 
 export function Roteiro() {
   return (
-    <section id="roteiro" className="section-gap pt-0">
+    <section id="roteiro" className="section-gap">
       <div className="container-okt">
         <Reveal>
           <Diamonds />

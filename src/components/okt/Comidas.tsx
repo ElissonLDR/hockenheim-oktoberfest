@@ -12,7 +12,7 @@ const ITEMS = [
 
 export function Comidas() {
   return (
-    <section id="comidas" className="section-gap pt-0">
+    <section id="comidas" className="section-gap">
       <div className="container-okt">
         <Reveal>
           <Diamonds />
