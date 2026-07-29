@@ -30,7 +30,7 @@ export function Header() {
           <img
             src="/images/logo-oktoberfest.png"
             alt="Logo Oktoberfest Hockenheim"
-            className={`h-10 w-auto transition-all duration-300 ${scrolled ? "" : "brightness-0 invert"}`}
+            className="h-10 w-auto"
           />
         </a>
 
@@ -39,9 +39,7 @@ export function Header() {
             <a
               key={l.href}
               href={l.href}
-              className={`relative text-[14px] font-semibold uppercase tracking-[0.1em] transition-colors duration-300 ${
-                scrolled ? "text-navy" : "text-cream"
-              } after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:bg-blue after:transition-all after:duration-300 hover:after:w-full`}
+              className="relative text-[14px] font-semibold uppercase tracking-[0.1em] text-navy transition-colors duration-300 after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:bg-blue after:transition-all after:duration-300 hover:after:w-full"
             >
               {l.label}
             </a>
