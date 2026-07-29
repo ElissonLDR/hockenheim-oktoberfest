@@ -160,3 +160,164 @@
     color: var(--color-foreground);
   }
 }
+
+/* ---------- Oktoberfest Hockenheim 2026 ---------- */
+
+:root {
+  --background: #feffef;
+  --foreground: #1b2f4a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    background-color: var(--color-cream);
+    color: var(--color-navy);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  :focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(24, 160, 220, 0.4);
+    border-radius: 4px;
+  }
+}
+
+@utility container-okt {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  @media (min-width: 768px) {
+    padding-inline: 40px;
+  }
+}
+
+@utility section-gap {
+  padding-block: clamp(80px, 10vw, 150px);
+}
+
+@utility h1-okt {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 0.92;
+  letter-spacing: -0.01em;
+  @media (min-width: 768px) {
+    font-size: clamp(44px, 7vw, 96px);
+  }
+}
+
+@utility h2-okt {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  @media (min-width: 768px) {
+    font-size: clamp(34px, 4.5vw, 68px);
+  }
+}
+
+@utility h3-okt {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.05;
+  @media (min-width: 768px) {
+    font-size: 28px;
+  }
+}
+
+@utility eyebrow-okt {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  line-height: 1.4;
+}
+
+@utility tag-okt {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+}
+
+@utility lead-okt {
+  font-size: 16px;
+  line-height: 1.65;
+  max-width: 58ch;
+}
+
+@utility body-okt {
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 62ch;
+}
+
+@utility body-sm-okt {
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+@keyframes okt-bounce-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+.okt-bounce {
+  animation: okt-bounce-y 1.8s ease-in-out infinite;
+}
+
+.okt-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  filter: blur(0);
+  transition:
+    opacity 600ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 600ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 600ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.okt-reveal-blur {
+  filter: blur(6px);
+}
+
+.okt-reveal.is-visible {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .okt-bounce {
+    animation: none;
+  }
+  .okt-reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
