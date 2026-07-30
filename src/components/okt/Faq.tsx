@@ -33,7 +33,7 @@ function Item({ q, a, open, onToggle }: { q: string; a: string; open: boolean; o
           type="button"
           onClick={onToggle}
           aria-expanded={open}
-          className="flex w-full items-start justify-between gap-6 py-6 text-left"
+          className="flex w-full cursor-pointer items-start justify-between gap-6 py-6 text-left"
         >
           <span className="font-display text-[24px] leading-[1.05] text-navy">{q}</span>
           <span
@@ -61,7 +61,7 @@ export function Faq() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section id="duvidas" className="section-gap">
+    <section id="duvidas" className="pb-8 pt-[clamp(56px,7vw,105px)] md:pb-10">
       <div className="container-okt">
         <div className="grid gap-12 md:grid-cols-12 md:gap-16">
           <div className="md:col-span-4">

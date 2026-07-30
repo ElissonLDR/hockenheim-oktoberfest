@@ -32,14 +32,14 @@ export function Hero() {
                 </Reveal>
 
                 <Reveal delay={80}>
-                  <Diamonds className="mt-3 justify-center md:mt-8 md:justify-start" />
+                  <div className="mt-3 flex flex-wrap items-center justify-center gap-3 md:mt-8 md:justify-start">
+                    <Diamonds />
+                    <p className="eyebrow-okt text-blue">Hockenheim · Cervejaria Artesanal</p>
+                    <Diamonds />
+                  </div>
                 </Reveal>
 
                 <Reveal delay={160}>
-                  <p className="eyebrow-okt mt-2 text-blue md:mt-3">Hockenheim · Cervejaria Artesanal</p>
-                </Reveal>
-
-                <Reveal delay={240}>
                   <div className="mt-3 flex justify-center md:mt-4 md:justify-start">
                     <span className="inline-flex items-baseline gap-2 rounded-full border border-blue/50 bg-blue/20 px-6 py-2 font-display text-navy backdrop-blur-sm">
                       <span className="text-[28px] leading-[1] md:text-[42px]">31 de outubro</span>
@@ -55,7 +55,7 @@ export function Hero() {
                 </Reveal>
 
                 <Reveal delay={400}>
-                  <p className="lead-okt mt-3 text-navy max-md:mx-auto md:mt-6 md:text-navy-60">
+                  <p className="lead-okt mt-3 text-navy max-md:mx-auto md:mt-6">
                     Um dia inteiro de open food, open bar de chope artesanal, provas típicas e música ao vivo — dos
                     tanques da fábrica ao palco.
                   </p>

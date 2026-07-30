@@ -59,7 +59,7 @@ export function OperaQueen() {
                   src="/images/logo-opera-queen.png?v=8"
                   alt="Logo Ópera Queen Tributo"
                   loading="lazy"
-                  className="pointer-events-none absolute bottom-5 left-5 h-16 w-auto bg-transparent md:bottom-6 md:left-6 md:h-24"
+                  className="pointer-events-none absolute bottom-5 left-5 h-[7.2rem] w-auto bg-transparent md:bottom-6 md:left-6 md:h-[10.8rem]"
                 />
               </button>
             </div>

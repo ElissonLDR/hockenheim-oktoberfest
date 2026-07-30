@@ -27,7 +27,7 @@ const ITEMS = [
     text: "Brinquedos infláveis com monitores. Dá para vir com a família e continuar sentado.",
   },
   {
-    img: "opera-queen-fundo.jpg",
+    img: "estacoes-para-foto.png",
     title: "Estações para foto",
     text: "Cenários montados pela festa inteira. Marque @hockenheim_br e apareça no nosso perfil.",
   },
@@ -45,7 +45,7 @@ function cellClasses(i: number) {
 
 export function Incluso() {
   return (
-    <section id="incluso" className="section-gap">
+    <section id="incluso" className="pb-[clamp(56px,7vw,105px)] pt-8 md:pt-10">
       <div className="container-okt">
         <Reveal>
           <div className="rounded-[28px] bg-navy px-5 py-8 md:px-16 md:py-[72px]">
@@ -59,9 +59,9 @@ export function Incluso() {
             <ul className="mt-12 grid grid-cols-1 md:-m-10 md:mt-6 md:grid-cols-2 lg:grid-cols-3">
               {ITEMS.map((item, i) => (
                 <Reveal as="li" key={item.title} delay={(i % 3) * 80} className={cellClasses(i)}>
-                  <div className="mb-4 h-44 w-full overflow-hidden rounded-xl md:h-52">
+                  <div className="mb-4 h-44 w-full overflow-hidden rounded-xl md:h-72 lg:h-80">
                     <img
-                      src={`/images/${item.img}?v=7`}
+                      src={`/images/${item.img}?v=8`}
                       alt={item.title}
                       loading="lazy"
                       className="size-full object-cover object-center"

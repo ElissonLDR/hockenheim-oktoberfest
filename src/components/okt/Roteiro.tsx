@@ -44,7 +44,7 @@ const BLOCKS = [
 
 export function Roteiro() {
   return (
-    <section id="roteiro" className="section-gap">
+    <section id="roteiro" className="pb-8 pt-[clamp(56px,7vw,105px)] md:pb-10">
       <div className="container-okt">
         <Reveal>
           <Diamonds />
@@ -111,7 +111,7 @@ export function Roteiro() {
           ))}
         </div>
       </div>
-      <div className="mt-[48px]">
+      <div className="mt-8 md:mt-10">
         <SectionDivider />
       </div>
     </section>

@@ -2,7 +2,7 @@ import { Diamonds, Reveal, TicketButton } from "./ui";
 
 export function CtaFinal() {
   return (
-    <section id="ingressos-final" className="section-gap">
+    <section id="ingressos-final" className="pb-[clamp(56px,7vw,105px)] pt-8 md:pt-10">
       <div className="container-okt">
         <Reveal>
           <div className="relative isolate min-h-[680px] overflow-hidden rounded-[28px] md:min-h-0">
