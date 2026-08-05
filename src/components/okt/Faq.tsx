@@ -22,7 +22,7 @@ const ITEMS: { q: string; a: ReactNode }[] = [
           href={MAPS_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="font-bold text-navy underline decoration-blue/40 underline-offset-2 transition-colors hover:text-blue hover:decoration-blue"
+          className="font-bold text-navy underline underline-offset-2 transition-colors hover:text-blue"
         >
           Estrada do Vinho 5043, Canguera, São Roque, SP, 18145-002
         </a>

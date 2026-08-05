@@ -53,7 +53,7 @@ export function Footer() {
               href="https://maps.google.com/?q=Estrada+do+Vinho+5043+Canguera+Sao+Roque+SP+18145-002"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-3 inline-block text-[14px] font-bold leading-relaxed text-cream transition-colors hover:text-blue"
+              className="mt-3 inline-block text-[14px] font-bold leading-relaxed text-cream underline underline-offset-2 transition-colors hover:text-blue"
             >
               Estrada do Vinho, 5043 · Canguera
               <br />
