@@ -59,14 +59,9 @@ export function Footer() {
               <br />
               São Roque · SP · 18145-002
             </a>
-            <a
-              href="https://maps.google.com/?q=Estrada+do+Vinho+5043+Canguera+Sao+Roque+SP+18145-002"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-3 inline-block text-[14px] font-bold text-cream transition-colors hover:text-blue"
-            >
+            <p className="mt-3 text-[14px] font-bold text-cream">
               Estacionamento cortesia para todos os visitantes.
-            </a>
+            </p>
             <a
               href="https://instagram.com/hockenheim_br"
               target="_blank"

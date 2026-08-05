@@ -27,14 +27,9 @@ const ITEMS: { q: string; a: ReactNode }[] = [
           Estrada do Vinho 5043, Canguera, São Roque, SP, 18145-002
         </a>
         .{" "}
-        <a
-          href={MAPS_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-bold text-navy underline decoration-blue/40 underline-offset-2 transition-colors hover:text-blue hover:decoration-blue"
-        >
+        <strong className="font-bold text-navy">
           Estacionamento cortesia, grátis para todos os visitantes do evento
-        </a>
+        </strong>
         .
       </>
     ),
