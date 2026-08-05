@@ -6,7 +6,7 @@ const BLOCKS = [
     kicker: "O dia todo, sem limite",
     h3: "Open food o dia inteiro",
     text: "Comida alemã de verdade saindo na sua frente, quantas vezes você quiser voltar.",
-    img: "open-food.jpg",
+    img: "imagem-open-food.png",
     alt: "Estação de open food com pratos alemães servidos na Oktoberfest",
     lists: [
       {

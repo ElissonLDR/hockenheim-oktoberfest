@@ -2,7 +2,7 @@ import { Diamonds, Reveal, TicketButton } from "./ui";
 
 const ITEMS = [
   {
-    img: "open-food.jpg",
+    img: "imagem-open-food.png",
     title: "Open food o dia todo",
     text: "As três estações liberadas, do salgado à sobremesa, sem consumação e sem limite de idas.",
   },
@@ -27,7 +27,7 @@ const ITEMS = [
     text: "Brinquedos infláveis com monitores. Dá para vir com a família e continuar sentado.",
   },
   {
-    img: "estacoes-para-foto.png",
+    img: "lugares-para-fotos.jpg",
     title: "Estações para foto",
     text: "Cenários montados pela festa inteira. Marque @hockenheim_br e apareça no nosso perfil.",
   },
