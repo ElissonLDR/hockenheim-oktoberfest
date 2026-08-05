@@ -28,7 +28,7 @@ export function OperaQueen() {
                 <p className="eyebrow-okt mt-3 text-blue">Música ao vivo · o principal atrativo</p>
                 <h2 className="h2-okt mt-4 text-cream">Ópera Queen Tributo no palco</h2>
                 <p className="body-okt mt-6 text-cream-70">
-                  A banda que fecha a noite tocando os maiores clássicos do Queen — cerveja na mão e todo mundo cantando
+                  A banda que fecha a noite tocando os maiores clássicos do Queen, cerveja na mão e todo mundo cantando
                   junto. Antes do show principal, a Radiophonica esquenta o palco com rock ao vivo.
                 </p>
                 <div className="mt-12">

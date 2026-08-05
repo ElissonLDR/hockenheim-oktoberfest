@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 
-export const TICKET_URL = "#ingressos";
+export const TICKET_URL = "https://zig.tickets/eventos/oktoberfest-hockenheim-2026";
 
 export function Diamonds({ count = 4, className = "" }: { count?: number; className?: string }) {
   return (

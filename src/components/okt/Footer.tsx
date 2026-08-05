@@ -45,10 +45,28 @@ export function Footer() {
             </a>
             <Diamonds className="mt-6" />
             <p className="mt-4 text-[15px] leading-relaxed text-cream">
-              31 de outubro · 2026
+              31 de outubro · 2026 · das 13h às 21h
               <br />
               Cervejaria Hockenheim
             </p>
+            <a
+              href="https://maps.google.com/?q=Estrada+do+Vinho+5043+Canguera+Sao+Roque+SP+18145-002"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-block text-[14px] font-bold leading-relaxed text-cream transition-colors hover:text-blue"
+            >
+              Estrada do Vinho, 5043 · Canguera
+              <br />
+              São Roque · SP · 18145-002
+            </a>
+            <a
+              href="https://maps.google.com/?q=Estrada+do+Vinho+5043+Canguera+Sao+Roque+SP+18145-002"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-block text-[14px] font-bold text-cream transition-colors hover:text-blue"
+            >
+              Estacionamento cortesia para todos os visitantes.
+            </a>
             <a
               href="https://instagram.com/hockenheim_br"
               target="_blank"

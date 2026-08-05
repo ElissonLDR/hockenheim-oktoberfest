@@ -4,15 +4,15 @@ export function Hero() {
   return (
     <section id="top" className="pt-[88px] md:pt-[104px]">
       <div className="mx-auto w-[98%]">
-        <div className="relative isolate h-[min(135dvh,1100px)] overflow-hidden rounded-[28px] md:h-[min(88vh,820px)]">
+        <div className="relative isolate flex min-h-[840px] overflow-hidden rounded-[28px] md:min-h-[min(88vh,820px)]">
           <img
             src="/images/hero-section-banner-mobile.png?v=10"
-            alt="Oktoberfest Hockenheim — chope, burger e bretzels"
+            alt="Oktoberfest Hockenheim: chope, burger e bretzels"
             className="absolute inset-0 size-full object-cover object-bottom md:hidden"
           />
           <img
             src="/images/hero-section-banner-desktop.png?v=10"
-            alt="Oktoberfest Hockenheim — chope, burger e bretzels"
+            alt="Oktoberfest Hockenheim: chope, burger e bretzels"
             className="absolute inset-0 hidden size-full object-cover object-right md:block"
           />
 
@@ -22,8 +22,8 @@ export function Hero() {
             className="pointer-events-none absolute bottom-3 right-3 z-30 h-[120px] w-auto drop-shadow-lg md:bottom-4 md:right-5 md:h-[150px] lg:h-[170px]"
           />
 
-          <div className="relative z-20 flex size-full items-start md:items-center">
-            <div className="container-okt w-full pt-6 pb-14 text-center md:py-14 md:text-left">
+          <div className="relative z-20 flex w-full items-start md:items-center">
+            <div className="container-okt w-full pb-36 pt-6 text-center md:py-14 md:text-left">
               <div className="w-full md:w-1/2">
                 <Reveal>
                   <span className="inline-flex items-center rounded-full border border-navy/25 px-4 py-1.5 text-[12px] font-bold uppercase tracking-[0.1em] text-navy">
@@ -56,7 +56,7 @@ export function Hero() {
 
                 <Reveal delay={400}>
                   <p className="lead-okt mt-3 text-navy max-md:mx-auto md:mt-6">
-                    Um dia inteiro de open food, open bar de chope artesanal, provas típicas e música ao vivo — dos
+                    Um dia inteiro de open food, open bar de chope artesanal, provas típicas e música ao vivo, dos
                     tanques da fábrica ao palco.
                   </p>
                 </Reveal>

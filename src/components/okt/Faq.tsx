@@ -1,22 +1,51 @@
-import { useRef, useState } from "react";
+import { useRef, useState, type ReactNode } from "react";
 import { Diamonds, Reveal } from "./ui";
 
-const ITEMS = [
+const MAPS_URL =
+  "https://maps.google.com/?q=Estrada+do+Vinho+5043+Canguera+Sao+Roque+SP+18145-002";
+
+const ITEMS: { q: string; a: ReactNode }[] = [
   {
     q: "Vou conseguir mesa?",
     a: "Sim. A festa é montada com mesas longas compartilhadas, como nas tendas alemãs, e o número de ingressos é limitado à capacidade real do espaço. Ninguém circula procurando lugar.",
   },
   {
     q: "É um evento para família ou só para quem quer beber?",
-    a: "Os dois convivem. Tem brinquedo inflável com monitor para as crianças, dança folclórica e comida o dia todo — e tem chope artesanal liberado e banda à noite. É festa alemã, não bar.",
+    a: "Os dois convivem. Tem espaço kids interno e externo, com infláveis e monitores, e comida o dia todo, e tem chope artesanal liberado e banda ao vivo. O ambiente é pet friendly, com área interna e externa. É festa alemã, não bar.",
   },
   {
     q: "Como chego e onde estaciono?",
-    a: "O evento acontece na estrutura da própria Cervejaria Hockenheim, em [ENDEREÇO COMPLETO], com [INFORMAR ESTACIONAMENTO]. Nada de estacionar longe e voltar a pé no escuro.",
+    a: (
+      <>
+        O evento acontece na estrutura da própria Cervejaria Hockenheim, na{" "}
+        <a
+          href={MAPS_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-bold text-navy underline decoration-blue/40 underline-offset-2 transition-colors hover:text-blue hover:decoration-blue"
+        >
+          Estrada do Vinho 5043, Canguera, São Roque, SP, 18145-002
+        </a>
+        .{" "}
+        <a
+          href={MAPS_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-bold text-navy underline decoration-blue/40 underline-offset-2 transition-colors hover:text-blue hover:decoration-blue"
+        >
+          Estacionamento cortesia, grátis para todos os visitantes do evento
+        </a>
+        .
+      </>
+    ),
+  },
+  {
+    q: "Que horas começa e até quando vai?",
+    a: "A festa acontece no dia 31 de outubro, das 13h às 21h: oito horas de open food, open bar e música ao vivo. Não há reentrada: depois que você sai, não é possível retornar.",
   },
   {
     q: "Preciso ir fantasiado?",
-    a: "Não é obrigatório, mas vale. Dirndl e Lederhosen são super bem-vindos, e a lojinha Hockenheim tem chapéu Gamsbart, tiaras e broches para quem quiser entrar no clima na hora — além das canecas oficiais e dos kits Pilzen & Weissbier.",
+    a: "Não é obrigatório, mas vale. Dirndl e Lederhosen são super bem-vindos, e a lojinha Hockenheim tem as canecas oficiais e os kits Pilzen & Weissbier para quem quiser levar a festa para casa.",
   },
   {
     q: "Posso comprar depois, na porta?",
@@ -24,7 +53,7 @@ const ITEMS = [
   },
 ];
 
-function Item({ q, a, open, onToggle }: { q: string; a: string; open: boolean; onToggle: () => void }) {
+function Item({ q, a, open, onToggle }: { q: string; a: ReactNode; open: boolean; onToggle: () => void }) {
   const panelRef = useRef<HTMLDivElement>(null);
   return (
     <div className="border-b border-navy-10">

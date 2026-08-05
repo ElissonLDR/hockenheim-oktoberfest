@@ -11,24 +11,24 @@ const BLOCKS = [
     lists: [
       {
         strong: "Pratos principais",
-        rest: " — Bretzel, Eisbein Sandwich, Oktober Burger, Hot Dog Alemão, Linguiça com Batata Alemã, Tostex Canapé Currywurst, Torresmo Crocante, Bolinho de Linguiça Blumenau e Schnitzel & Cogumelo.",
+        rest: ": Bretzel, Eisbein Sandwich, Oktober Burger, Hot Dog Alemão, Linguiça com Batata Alemã, Tostex Canapé Currywurst, Torresmo Crocante, Bolinho de Linguiça Blumenau e Schnitzel & Cogumelo.",
       },
-      { strong: "Sobremesas", rest: " — Apfelstrudel e Oktober Eiscreme." },
+      { strong: "Sobremesas", rest: ": Apfelstrudel e Oktober Eiscreme." },
     ],
   },
   {
     tag: "Open bar",
     kicker: "Direto dos tanques",
     h3: "Chope tirado na origem",
-    text: "Pilzen puro malte e Weissbier de trigo, produzidos e servidos no mesmo lugar. Mais o drink exclusivo da Oktoberfest, refrigerante e água mineral — tudo liberado, o dia inteiro.",
+    text: "Pilzen puro malte e Weissbier de trigo, produzidos e servidos no mesmo lugar. Mais o drink exclusivo da Oktoberfest, refrigerante e água mineral, tudo liberado, o dia inteiro.",
     img: "chope-tap.jpg",
     alt: "Chope artesanal Hockenheim sendo tirado direto dos tanques da fábrica",
   },
   {
     tag: "Provas & palco",
     kicker: "Com mestre de cerimônias",
-    h3: "Provas alemãs e danças típicas",
-    text: "As provas típicas confirmadas: chope de metro cronometrado e o Masskrugstemmen — quem segura a caneca no braço estendido por mais tempo —, além das danças folclóricas alemãs. À noite, as bandas assumem o palco.",
+    h3: "Provas alemãs e música ao vivo",
+    text: "As provas típicas confirmadas: chope de metro cronometrado e o Masskrugstemmen, quem segura a caneca no braço estendido por mais tempo. No palco, Radiophonica e Ópera Queen Brasil comandam as oito horas de festa.",
     img: "provas-alemas.jpg",
     alt: "Participantes disputando provas típicas alemãs no palco da festa",
   },
@@ -36,7 +36,7 @@ const BLOCKS = [
     tag: "Espaço kids",
     kicker: "Pode trazer a família",
     h3: "Brinquedos infláveis com monitores",
-    text: "Enquanto você fica na mesa com o chope e o bretzel, as crianças têm área própria com infláveis e monitores acompanhando. Festa alemã é festa de família — e aqui isso é levado a sério.",
+    text: "Enquanto você fica na mesa com o chope e o bretzel, as crianças têm área própria com infláveis e monitores acompanhando. Festa alemã é festa de família, e aqui isso é levado a sério.",
     img: "espaco-kids.jpg",
     alt: "Crianças brincando nos brinquedos infláveis do espaço kids",
   },
@@ -51,7 +51,7 @@ export function Roteiro() {
           <p className="eyebrow-okt mt-3 text-blue">O roteiro do dia</p>
           <h2 className="h2-okt mt-4 text-navy">Do primeiro chope ao último show</h2>
           <p className="lead-okt mt-6 text-navy-60">
-            Do open food que não para até o show que fecha a noite — assim acontece o dia 31.
+            Do open food que não para até o show que fecha a noite. Assim acontece o dia 31.
           </p>
         </Reveal>
 

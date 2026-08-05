@@ -19,7 +19,7 @@ const ITEMS = [
   {
     img: "provas-alemas.jpg",
     title: "Programação completa",
-    text: "Danças típicas, provas alemãs (chope de metro e Masskrugstemmen) e as bandas ao vivo.",
+    text: "Oito horas de festa com provas alemãs (chope de metro e Masskrugstemmen) e as bandas ao vivo.",
   },
   {
     img: "espaco-kids.jpg",

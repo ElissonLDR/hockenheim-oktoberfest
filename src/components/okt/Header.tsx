@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { TicketButton } from "./ui";
+import { TICKET_URL, TicketButton } from "./ui";
 
 const LINKS = [
   { label: "A festa", href: "#a-festa" },
@@ -50,7 +50,7 @@ export function Header() {
           <TicketButton size="sm" />
         </span>
         <a
-          href="#ingressos"
+          href={TICKET_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex h-10 items-center rounded-full bg-blue px-5 text-[13px] font-bold tracking-[0.02em] text-cream sm:hidden"
